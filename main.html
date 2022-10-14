@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLA Feedback Form</title>
+    <style>
+      body {
+        text-align: center;
+        line-height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Thank you for joining us for a session at Code Labs Academy!</h1>
+    <form action="">
+      <div>
+        <label for="session-date">Session Date:</label>
+        <input type="date" name="session-date" />
+        <label for="subject">Subject:</label>
+        <select name="subject" id="subject">
+          <option value="other">Other</option>
+          <option value="web">Web Devalopement</option>
+          <option value="ui-ux">UI-UX design</option>
+          <option value="ds">Data science</option>
+          <option value="security">Cyber Security</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="topics"
+          >Please mention any topics you would like to ask further questions or
+          gather more information on.</label
+        >
+        <br />
+        <textarea name="topics" cols="30" rows="7" placeholder=""> </textarea>
+      </div>
+
+      <div>
+        <label for="yn">Do you study at home?</label>
+        <span
+          ><input type="radio" name="yn" />Yes<input
+            type="radio"
+            name="yn"
+          />No</span
+        >
+      </div>
+
+      <div>
+        <p>Why are you seeking more information on these topics?</p>
+        <input type="checkbox" name="choice-1" />
+        <label for="choice-1"></label>
+          I am interested in a more in depth discussion</label
+        ><br />
+        <input type="checkbox" name="choice-2" />
+        <label for="choice-2">I didnt understand it in the session</label><br />
+        <input type="checkbox" name="choice-3" />
+        <label for="choice-3">Phone apps</label>
+      </div>
+
+      <div>
+        <label for="rating-1">
+          On a scale of 1 to 5, please indicate how informative you felt the
+          session was.
+        </label>
+        <span><input type="number" name="rating-1" /></span>
+      </div>
+
+      <div>
+        <label for="rating-2">
+          On a scale of 1 to 5, please indicate how engaging you felt the
+          session was.
+        </label>
+        <span><input type="number" name="rating-2" /></span>
+      </div>
+
+      <div>
+        <label for="rating-3">
+          On a scale of 1 to 5, please indicate how likely you feel it is that
+          you would recommend the course to a friend.
+        </label>
+        <span><input type="number" name="rating-3" /></span>
+      </div>
+
+      <div>
+        <label for="feedback">
+          Please use this space to give us any other feedback you may have.
+        </label>
+        <br />
+        <textarea name="feedback" cols="30" rows="7" placeholder=""> </textarea>
+      </div>
+
+      <div>
+        <label for="email">Email address:</label>
+        <span><input type="email" name="email" /></span>
+      </div>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
